@@ -24,6 +24,7 @@ jobs:
     - name: Install C dependencies (Ubuntu)
       if: matrix.os == 'ubuntu-latest'
       run: |
+        sudo apt-get remove needrestart
         sudo apt-get update
         sudo apt-get install -y cmake
 
