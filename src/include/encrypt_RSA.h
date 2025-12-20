@@ -1,5 +1,5 @@
-#ifndef ENCRYPT_H
-#define ENCRYPT_H
+#ifndef ENCRYPT_RSA_H
+#define ENCRYPT_RSA_H
 
 #include <openssl/evp.h>
 
@@ -14,7 +14,7 @@ unsigned char *RSA_pub_encrypt(EVP_PKEY *RSA_key, const unsigned char *msg, size
 unsigned char *RSA_priv_decrypt(EVP_PKEY *RSA_key, const unsigned char *encrypted_msg, 
                                 size_t encrypted_msg_length, size_t *decrypted_msg_length);
 
-#endif /* ENCRYPT_H */
+#endif /* ENCRYPT_RSA_H */
 
 
 
